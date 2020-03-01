@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build A Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <article class="container bg-light border border-info">
+        <br>
+        <section class="row">
+            <div class="col text-center">
+                <h1 id="title" class="text-info">FORMULARIO DE REGISTRO</h1>
+                <br>
+                <img src="img/estudia-maestria-direccion-gestion-rrhh-online-ubp.jpg" class="img-fluid" alt="Responsive image">
+                <br>
+                <br>
+                <p id="description" class="text-xl-left">La empresa Gestión y Talento cuenta con 10 años de experiencia en soluciones comerciales, cuidado de las marcas, operación minorista y procesos de gestión humana. Estamos comprometidos con la búsqueda constante del conocimiento a profundidad
+                    de los grupos de interés y sus entornos, para dar respuestas y soluciones a sus requisitos partiendo de la experiencia, innovación y credibilidad de nuestra actuación, creando valor, siendo corresponsales y consolidando relaciones
+                    a beneficios mutuos en el largo plazo.
+                    <br>
+                    <br> Ingrese sus datos personales y muy pronto nos estaremos contactando contigo.
+                </p>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col">
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="name" id="name-label">Nombre</label>
+                        <input id="name" type="text" class="form-control" placeholder="Ej: Luisa Fernanda Villa">
+                        <small class="form-text text-muted">Ingrese su nombre completo.</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="email" id="email-label">Email</label>
+                        <input id="email" type="email" class="form-control" placeholder="Ej: luisavima@gmail.com">
+                        <small class="form-text text-muted">Ingrese su dirección de correo electrónico completo.</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="number" id="number-label">Teléfono</label>
+                        <input id="number" type="number" class="form-control" max="999999999" min="9999999" placeholder="Ej: 3040888000">
+                        <small class="form-text text-muted">Ingrese número de teléfono fijo o celular.</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="dropdown">Ciudad</label>
+                        <select id="dropdown" class="form-control">
+                            <option disabled selected></option>
+                            <option>Barranquilla</option>
+                            <option>Bogotá</option>
+                            <option>Cali</option>
+                            <option>Cartagena</option>
+                            <option>Cúcuta</option>
+                            <option>Medellín</option>
+                            <option>Villa vicencio</option>
+                        </select>
+                    </div>
+                    <label class="font-weight-bold">Sexo</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" value="sexofemenino" id="sexfem">
+                        <label class="form-check-label" for="sexfem"> Femenino </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" value="sexomasculino" id="sexmas">
+                        <label class="form-check-label" for="sexmas"> Masculino </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" value="sexootro" id="sexotro">
+                        <label class="form-check-label" for="sexotro"> Otro </label>
+                    </div>
+                    <br>
+                    <br>
+                    <label class="font-weight-bold">Hijos</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="hijos" value="si" id="hijossi">
+                        <label class="form-check-label" for="hijossi">Sí</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="hijos" value="no" id="hijosno">
+                        <label class="form-check-label" for="hijosno">No</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label class="font-weight-bold">Ocupación</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="estudiante" type="checkbox" value="Estudiante">
+                        <label class="form-check-label" for="estudiante">Estudiante</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="empleado" type="checkbox" value="Empleado">
+                        <label class="form-check-label" for="empleado">Empleado</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="independiente" type="checkbox" value="Independiente">
+                        <label class="form-check-label" for="independiente">Independiente</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="desempleado" type="checkbox" value="Desempleado">
+                        <label class="form-check-label" for="desempleado">Desempleado</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="pensionado" type="checkbox" value="Pensionado">
+                        <label class="form-check-label" for="pensionado">Pensionado</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="otro" type="checkbox" value="Otro">
+                        <label class="form-check-label" for="otro">Otro</label>
+                    </div>
+                    <div class="form-group">
+                        <br>
+                        <label class="font-weight-bold">Información adicional</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Realice una breve descripción de su experiencia laboral."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar formulario</button>
+
+                </form>
+                <br>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
